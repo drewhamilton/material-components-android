@@ -119,7 +119,6 @@
       android:layout_height="40dp"
       android:background="?colorSecondary"
       android:elevation="2dp"
-      app:contentPadding="8dp"
       app:shapeAppearance="?shapeAppearanceSmallComponent"
       app:srcCompat="@drawable/ic_pets_24dp"
       app:tint="?colorOnSecondary"

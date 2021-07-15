@@ -17,9 +17,9 @@
 package io.material.catalog.imageview;
 
 import io.material.catalog.R;
-
 import android.os.Bundle;
 import android.util.SparseArray;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,6 +46,10 @@ public class ShapeableImageViewMainDemoFragment extends DemoFragment {
     MaterialButtonToggleGroup toggleGroup = view.findViewById(R.id.togglegroup);
     ShapeableImageView imageView = view.findViewById(R.id.image_view);
     ShapeableImageView iconView = view.findViewById(R.id.icon_view);
+
+    int px = (int) TypedValue.applyDimension(
+        TypedValue.COMPLEX_UNIT_DIP, 8f, getResources().getDisplayMetrics());
+    iconView.setContentPadding(px, px, px, px);
 
     SparseArray<ShapeAppearanceModel> shapes = new SparseArray<>();
     shapes.put(
